@@ -3,6 +3,8 @@
 ## Project Description
 An interactive web dashboard for visualizing and analyzing up-to-date COVID-19 data across the globe. Built with Python using Dash and Plotly, this dashboard provides insightful visualizations of the pandemic's trends, including cumulative and daily cases, deaths, and country-specific data.
 
+![CV-19 Figure](https://github.com/OkeahDavid/COVID-19-Interactive-Dashboard/assets/82973470/7c91c2f8-cb99-46ea-95ec-82ec1db589ff)
+
 ## Features
 - Interactive graphs showing **cumulative COVID-19 cases and deaths**.
 - Daily updates on **new COVID-19 cases and deaths**.
