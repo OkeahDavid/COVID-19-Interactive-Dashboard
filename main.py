@@ -4,12 +4,25 @@ from dash import html
 from dash.dependencies import Input, Output
 import plotly.express as px
 import pandas as pd
+from data_fetching import fetch_latest_data
+from data_integrity_check import check_data_integrity
+
 
 # Initialize the Dash application
 app = dash.Dash(__name__)
 
-# Read the COVID-19 data from the provided CSV file
-covid_data = pd.read_csv('WHO-COVID-19-global-data.csv')
+# Fetch the latest COVID-19 data
+data_url = 'https://covid19.who.int/WHO-COVID-19-global-data.csv'
+default_data_path = 'WHO-COVID-19-global-data.csv' 
+
+# Fetch the latest data or use the default dataset in case of an error
+latest_data_file = fetch_latest_data(data_url, default_data_path)
+
+# Load the CSV data into a DataFrame
+covid_data = pd.read_csv(latest_data_file)
+
+# Perform data integrity checks
+check_data_integrity(covid_data)
 
 # Define the layout of the Dash application
 app.layout = html.Div([
