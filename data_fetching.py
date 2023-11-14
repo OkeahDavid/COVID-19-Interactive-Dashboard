@@ -1,5 +1,4 @@
 import requests
-import pandas as pd
 import logging
 from tqdm import tqdm
 
