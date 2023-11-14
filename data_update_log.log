@@ -5,3 +5,14 @@ INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
 
 INFO:root:Data fetched successfully.
 INFO:root:Data integrity check passed.
+ERROR:root:Error occurred during data fetching: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+INFO:root:Using default data from WHO-COVID-19-global-data.csv
+INFO:root:Data integrity check passed.
+ERROR:root:Error occurred during data fetching: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+INFO:root:Using default data from WHO-COVID-19-global-data.csv
+INFO:root:Data integrity check passed.
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+ERROR:root:Error occurred during data fetching: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+INFO:root:Using default data from WHO-COVID-19-global-data.csv
+INFO:root:Data integrity check passed.
