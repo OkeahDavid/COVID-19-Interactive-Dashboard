@@ -21,6 +21,8 @@ latest_data_file = fetch_latest_data(data_url, default_data_path)
 # Load the CSV data into a DataFrame
 covid_data = pd.read_csv(latest_data_file)
 
+covid_data['Country'] = covid_data['Country'].fillna('Unknown')
+
 # Perform data integrity checks
 check_data_integrity(covid_data)
 
